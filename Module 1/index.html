@@ -9,13 +9,15 @@
 </head>
 
 <body>
+  <script src="app.js"></script>
   <div class="main">
     <p class="sign" align="center">Login</p>
     <form class="form1">
-      <input class="un " type="text" align="center" placeholder="Username">
-      <input class="pass" type="password" align="center" placeholder="Password">
-      <a class="submit" align="center" >Sign in</a>
-      <p class="forgot" align="center">Not a user? <a class="forgot" href="../Module 2/index.html">Register now.</p>
+      <input class="un " type="text" id="username" placeholder="Username" required></input>
+      <input class="pass" type="password" id="password" placeholder="Password" required></input>
+      <a class="submit" align="center"   onclick="validate()" type="submit">Sign in</a>
+      <p class="Register" align="center">Not a user? <a class="Register" href="../Module 2/index.html"><b>Register now.</b></p>
     </div>
+
 </body>
 </html>

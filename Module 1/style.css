@@ -1,7 +1,5 @@
-
 body {
 	 background-size: cover;
-	 background-color: #F3EBF6;
 	 font-family: 'Ubuntu', sans-serif; background: #092756;
 	 background: #092756;
     background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
@@ -10,6 +8,16 @@ body {
     background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
     background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+}
+
+form.form1 {
+	 padding-top: 40px;
+}
+
+a,button{
+	text-decoration: none;
+	outline: none;
+	border: none;
 }
 
 .main {
@@ -31,60 +39,43 @@ body {
 
 .un {
 width: 76%;
-color: rgb(38, 50, 56);
-font-weight: 700;
 font-size: 14px;
+font-family: 'Ubuntu', sans-serif;
+font-size: 16px;
 letter-spacing: 1px;
-background: rgba(136, 126, 126, 0.04);
-padding: 10px 20px;
-border: none;
-border-radius: 20px;
+padding: 11.5px 15px 15px 15px;
 outline: none;
-box-sizing: border-box;
-border: 2px solid rgba(0, 0, 0, 0.02);
+border: transparent;
+border-bottom: 1px solid #ccc;
+background: transparent;
 margin-bottom: 50px;
 margin-left: 46px;
-text-align: center;
 margin-bottom: 27px;
-font-family: 'Ubuntu', sans-serif;
-}
-
-form.form1 {
-	 padding-top: 40px;
+text-align: left;
 }
 
 .pass {
-			 width: 76%;
-color: rgb(38, 50, 56);
-font-weight: 700;
-font-size: 14px;
-letter-spacing: 1px;
-background: rgba(136, 126, 126, 0.04);
-padding: 10px 20px;
-border: none;
-border-radius: 20px;
-outline: none;
-box-sizing: border-box;
-border: 2px solid rgba(0, 0, 0, 0.02);
-margin-bottom: 50px;
-margin-left: 46px;
-text-align: center;
-margin-bottom: 27px;
-font-family: 'Ubuntu', sans-serif;
-}
-
-
-.un:focus, .pass:focus {
-	 border: 2px solid rgba(0, 0, 0, 0.18) !important;
-
+	width: 76%;
+	font-size: 14px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+	padding: 11.5px 15px 15px 15px;
+	outline: none;
+	background: transparent;
+	border: transparent;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 50px;
+	margin-left: 46px;
+	margin-bottom: 27px;
+	text-align: left;
 }
 
 .submit {
- cursor: pointer;
+   cursor: pointer;
 	 border-radius: 5em;
 	 color: #fff;
 	 background: linear-gradient(to right, #9C27B0, #E040FB);
-	 border: 0;
 	 padding-left: 40px;
 	 padding-right: 40px;
 	 padding-bottom: 10px;
@@ -92,22 +83,9 @@ font-family: 'Ubuntu', sans-serif;
 	 font-family: 'Ubuntu', sans-serif;
 	 margin-left: 35%;
 	 font-size: 13px;
-	 box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
 }
 
-.forgot {
-	 text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-	 color: #710193;
+.Register {
+	 color:  #8C55AA;
 	 padding-top: 15px;
 }
-
-a {
-	 text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-	 color: #E1BEE7;
-	 text-decoration: none
-}
-
-@media (max-width: 600px) {
-	 .main {
-			 border-radius: 0px;
-	 }

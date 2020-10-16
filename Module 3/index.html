@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>DashBoard</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
 
-
+<!--
 	<div class="icon-bar">
 
-     <a class="active" href="#"><i class="fa fa-user-circle"></i></a> 
-    <a href="#"><i class="fa fa-bell"></i></a> 
-    <a href="#"><i class="fa fa-shopping-cart"></i></a> 
+     <a class="active" href="#"><i class="fa fa-user-circle"></i></a>
+    <a href="#"><i class="fa fa-bell"></i></a>
+    <a href="#"><i class="fa fa-shopping-cart"></i></a>
       <div class="">
     	<div class="menu1"></div>
         <div class="menu1"></div>
@@ -21,25 +22,22 @@
       </div>
 
    </div>
+-->
 
-	 
-  
+
     <div class="container">
-		<h1 id="title" class="center-text mt-5">Book bank</h1>
+		<h1 id="title" class="center-text mt-5" style="font-family: 'Righteous', cursive;">Book bank</h1>
 		<div class="row">
-			<div id="input" class="input-group mx-auto col-lg-12 col-md-12 col-sm-12">
-				<input id="search-box" type="text" class="form-control" placeholder="search books..">
-				<button id="search" class="btn btn-primary" onclick="">search</button>
-			</div>
+
 	   </div>
     </div>
 
-    
+
     <section>
     <nav class="menu">
     	<button class="accordion">Genres</button>
    <div class="panel">
-   	
+
    		<button class="accordion">Fiction</button>
         <button class="accordion">Non-fiction</button>
    	</div>
@@ -52,7 +50,7 @@
      </div>
    <button class="accordion">Popular</button>
     <div class="panel"></div>
-    
+
 
 <script>
 var acc = document.getElementsByClassName("accordion");
@@ -66,24 +64,52 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+    }
   });
 }
 </script>
-      
+
   </nav>
-  
+  <section>
+
+  </section>
   <article>
-  	
-    <img src="https://cdn2.momjunction.com/wp-content/uploads/2016/02/Harry-Potter-Series.jpg" />
 
-    <img src="https://s3.scoopwhoop.com/anj/books/418243985.jpg" />
-    <img src="https://i.pinimg.com/236x/34/95/f9/3495f9b6fc5fd0fb7c62891b19f718b6.jpg" />
-    <img src="https://i.imgur.com/lQTWgY2.jpg" />
+    <div class="wrap"><br/><br/>
+   <div class="search centralise">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div>
+    <br/><br/>
+    <div class="row ">
+      <h3 style='font-family: "Righteous", cursive;'>Recommended For you </h3><br/>
+    <div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.BJ6RvaBNy_NE-TYHt-PqygHaL2%26pid%3DApi&f=1">
+</div><div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.muJD87HGRM2Ttti-hhhqWQHaJS%26pid%3DApi&f=1">
+</div><div class="column">
+  <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ONCDYTwdGH6xH1Zb8DOAJQHaJL%26pid%3DApi&f=1">
+</div><div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XCcoK1vPeCfeC83vHyJLQQAAAA%26pid%3DApi&f=1">
+</div><br/><br/> </div>
 
+    <div class="row ">
+    <div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-7bT-fnMJebTV11eU059QAAAAA%26pid%3DApi&f=1">
+</div><div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.NPkuX-o_U5svO9RJ3Ao34wHaJK%26pid%3DApi&f=1">
+</div><div class="column">
+  <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.tnpGfqo8gFnaOYhxI60zeQAAAA%26pid%3DApi&f=1">
+</div><div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.31TL6fBYnWwGN_WQ3JOZFwHaLK%26pid%3DApi&f=1">
+</div>  </div>
+    </div>
   </article>
   <div class="right">
-    
+
   </div>
 </section>
 
@@ -92,7 +118,7 @@ for (i = 0; i < acc.length; i++) {
 		<h2 class="text center">Search result</h2>
 		<div id="list-output" class="">
 			<div class="row">
-				
+
 			</div>
 		</div>
 	  </div>
