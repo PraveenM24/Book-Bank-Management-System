@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+	<div class="icon-bar">
+
+     <a class="active" href="#"><i class="fa fa-user-circle"></i></a> 
+    <a href="#"><i class="fa fa-bell"></i></a> 
+    <a href="#"><i class="fa fa-shopping-cart"></i></a> 
+      <div class="">
+    	<div class="menu1"></div>
+        <div class="menu1"></div>
+        <div class="menu1"></div>
+      </div>
+
+   </div>
+
+	 
+  
+    <div class="container">
+		<h1 id="title" class="center-text mt-5">Book bank</h1>
+		<div class="row">
+			<div id="input" class="input-group mx-auto col-lg-12 col-md-12 col-sm-12">
+				<input id="search-box" type="text" class="form-control" placeholder="search books..">
+				<button id="search" class="btn btn-primary" onclick="">search</button>
+			</div>
+	   </div>
+    </div>
+
+    
+    <section>
+    <nav class="menu">
+    	<button class="accordion">Genres</button>
+   <div class="panel">
+   	
+   		<button class="accordion">Fiction</button>
+        <button class="accordion">Non-fiction</button>
+   	</div>
+
+<button class="accordion">Author</button>
+<div class="panel">
+  </div>
+    <button class="accordion">Most read</button>
+    <div class="panel">
+     </div>
+   <button class="accordion">Popular</button>
+    <div class="panel"></div>
+    
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+      
+  </nav>
+  
+  <article>
+  	
+    <img src="https://cdn2.momjunction.com/wp-content/uploads/2016/02/Harry-Potter-Series.jpg" />
+
+    <img src="https://s3.scoopwhoop.com/anj/books/418243985.jpg" />
+    <img src="https://i.pinimg.com/236x/34/95/f9/3495f9b6fc5fd0fb7c62891b19f718b6.jpg" />
+    <img src="https://i.imgur.com/lQTWgY2.jpg" />
+
+  </article>
+  <div class="right">
+    
+  </div>
+</section>
+
+
+    <div class="book-list">
+		<h2 class="text center">Search result</h2>
+		<div id="list-output" class="">
+			<div class="row">
+				
+			</div>
+		</div>
+	  </div>
+</body>
+</html>
