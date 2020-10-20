@@ -1,3 +1,9 @@
+.error-msg{
+	margin-top: 100px;
+	text-align: center;
+	color: white;
+
+}
 body {
 	 background-size: cover;
 	 font-family: 'Ubuntu', sans-serif; background: #092756;
