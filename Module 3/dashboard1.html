@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DashBoard</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+	   <h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Book Bank</h1>
+  </div>
+  <section>
+		<nav class="menu">
+		</nav>
+    <article>
+			<form>
+				<div style="text-align:center">
+					<h3 style='font-family: "Righteous", cursive;	'>Select your Department and Year </h3><br/>
+					<br/><br/>
+					<select name="department" id="department" style="padding:8px;font-size:15px;border-radius: 0.2em;border: 0;outline:none">
+						<option value="def" selected disabled>Department</option>
+        		<option value="cse" name="" >CSE</option>
+        		<option value="eee"name="" >EEE</option>
+        		<option value="ece"name="">ECE</option>
+      		</select>
+      		<select name="year" id="year" style="margin-left:15px;padding:8px;font-size:15px;width:106px;border-radius: 0.2em;border: 0;outline:none;" >
+						<option value="def" selected disabled>Year</option>
+        		<option value="1y" name="" >I Year</option>
+        		<option value="2y"name="" >II Year</option>
+        		<option value="3y"name="">III Year</option>
+        		<option value="4y"name="">IV Year</option>
+      		</select>
+      		<br/>
+      	</div>
+				<br/>
+				<button class="logout" type="submit" value="Submit" style="margin-left: 402px;text-decoration: none;color:#ffffff;font-weight:bolder;" onclick="redirect()">Submit</button>
+				<script src="app.js"></script>
+			</form>
+    </article>
+    <div class="right">
+			<button class="logout" style="text-align: center;margin-left: 120px;"><a href="logout.php" style="text-decoration: none;color:#ffffff;font-weight:bolder;">Logout</a></button>
+    </div>
+  </section>
+	<footer>
+	</footer>
+</body>
+</html>

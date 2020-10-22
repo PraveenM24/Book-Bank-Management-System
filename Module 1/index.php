@@ -26,7 +26,7 @@
           if ($rows == 1) {
               $_SESSION['username'] = $username;
               // Redirect to user dashboard page
-              header("Location: ../Module 3/index.html");
+              header("Location: ../Module 3/dashboard1.html");
           } else {
               echo "<div class='error-msg'>
                     <h3 style='text-align:center;'>Incorrect Username/password.</h3><br/>
