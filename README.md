@@ -4,7 +4,7 @@
 > Software Requirements
 
   - [X] <a href="https://www.apachefriends.org/download.html">XAMPP [Web Server]</a><br/>
-  - [x] <a href="https://atom.io/">Atom [Editor]</a><br/>
+  - [x] <a href="https://atom.io/">Atom [Editor]</a><br/><br/>
 
 
 > How to run the project ?
