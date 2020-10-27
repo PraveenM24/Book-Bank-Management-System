@@ -1,0 +1,97 @@
+.error-msg{
+	margin-top: 100px;
+	text-align: center;
+	color: white;
+
+}
+body {
+	 background-size: cover;
+	 font-family: 'Ubuntu', sans-serif; background: #092756;
+	 background: #092756;
+    background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+}
+
+form.form1 {
+	 padding-top: 40px;
+}
+
+a,button{
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+.main {
+	 background-color: #FFFFFF;
+	 width: 400px;
+	 height: 400px;
+	 margin: 7em auto;
+	 border-radius: 1.5em;
+	 box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+	 padding-top: 40px;
+	 color: #8C55AA;
+	 font-family: 'Ubuntu', sans-serif;
+	 font-weight: bold;
+	 font-size: 23px;
+}
+
+.un {
+width: 76%;
+font-size: 14px;
+font-family: 'Ubuntu', sans-serif;
+font-size: 16px;
+letter-spacing: 1px;
+padding: 11.5px 15px 15px 15px;
+outline: none;
+border: transparent;
+border-bottom: 1px solid #ccc;
+background: transparent;
+margin-bottom: 50px;
+margin-left: 46px;
+margin-bottom: 27px;
+text-align: left;
+}
+
+.pass {
+	width: 76%;
+	font-size: 14px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+	padding: 11.5px 15px 15px 15px;
+	outline: none;
+	background: transparent;
+	border: transparent;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 50px;
+	margin-left: 46px;
+	margin-bottom: 27px;
+	text-align: left;
+}
+
+.submit {
+   cursor: pointer;
+	 border-radius: 5em;
+	 color: #fff;
+	 background: linear-gradient(to right, #9C27B0, #E040FB);
+	 padding-left: 40px;
+	 padding-right: 40px;
+	 padding-bottom: 10px;
+	 padding-top: 10px;
+	 font-family: 'Ubuntu', sans-serif;
+	 margin-left: 35%;
+	 font-size: 13px;
+}
+
+.Register {
+	 color:  #8C55AA;
+	 padding-top: 15px;
+}
