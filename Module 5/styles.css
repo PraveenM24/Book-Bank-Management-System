@@ -1,0 +1,239 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+  background: #092756;
+   background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+   background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+   background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+   background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+   background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+}
+.github{
+  text-decoration:none;
+  color:black;
+}
+.github:hover{
+  color: blue;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: black;
+}
+
+.searchTerm:focus{
+  color: black;
+  font-weight:bold;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 55%;
+
+}
+.column{
+    float: left;
+    width: 25%;
+    margin-bottom: 30px;
+}
+.row{
+  margin-left: 64px;
+}
+body{
+	background-color: black;
+	height: 100%;
+	background-position: center;
+	background-repeat: no repeat;
+	background-size: cover;
+}
+.container{
+	text-align: center;
+	padding:36px;
+	font-size: 20px;
+	background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F69eisenhower.csub.edu%2Facademicprograms%2F_images%2Flibrary%2520-%2520wide%2520banner.jpg&f=1&nofb=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    font-family: 'Goudy Old Style';
+    }
+.centralise{
+  margin-left: 200px;
+  margin-right: auto;
+
+}
+h1,h2{
+	font-family: 'Righteous',sans-serif
+	}
+#header{
+	font-size: 3rem;
+}
+section{
+	display: -webkit-flex;
+	display: flex;
+}
+nav{
+	-webkit-flex:1;
+	-ms-flex:1;
+	flex: 1;
+	background:#e5e5e5;
+	padding: 10px;
+	padding-bottom: 500px;
+    width:50%;
+
+}
+
+.menu {
+  float:left;
+  width:100px;
+  text-align:center;
+
+
+}
+.menu a {
+  background-color:#e5e5e5;
+  padding:10px;
+  margin-top:10px;
+  display:block;
+  width:50%;
+  color:black;
+  overflow: auto;
+}
+article{
+
+	flex: 3;
+	background:#f1f1f1;
+	padding: 10px;
+
+}
+.book-list{
+	margin-top: 50px;
+	text-align: center;
+
+}
+#search-box{
+	padding: 0 120px;
+}
+img{
+
+	box-shadow: 0 0 1px rgba(0,0,0,0.2);
+
+}
+.logout{
+  border: 0;
+  background: #00B4CC;
+  padding: 10px;
+  border-radius: 0.2em;
+  margin-left: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  cursor:pointer;
+
+}
+.right {
+  background-color:#e5e5e5;
+  float:right;
+  width:20%;
+  padding-top: 50px;
+}
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  background:rgba(211,211,211,0.6);
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: right;
+  width: 5%;
+  text-align: center;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  color: #000000;
+  font-size: 12px;
+
+}
+
+.icon-bar a:hover {
+  background-color: #fff;
+  background:rgba(211,211,211,0.6);
+}
+
+/*.active {
+  background-color: #00;
+  background:rgba(211,211,211,0.6);
+}*/
+.menu1{
+  width: 28px;
+  height: 4px;
+  background-color: black;
+  margin: 6px 0;
+  margin-left: 30px;
+
+
+}
+.accordion, .accordion-2  {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.accordion-2 a{
+  text-decoration: none;
+
+}
+.active, .accordion:hover, .accordion-2:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

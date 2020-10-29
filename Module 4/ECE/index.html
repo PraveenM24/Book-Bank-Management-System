@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DashBoard</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--
+	<div class="icon-bar">
+
+     <a class="active" href="#"><i class="fa fa-user-circle"></i></a>
+    <a href="#"><i class="fa fa-bell"></i></a>
+    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+      <div class="">
+    	<div class="menu1"></div>
+        <div class="menu1"></div>
+        <div class="menu1"></div>
+      </div>
+
+   </div>
+-->
+
+
+    <div class="container">
+		<h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Book Bank</h1>
+		<div class="row">
+
+	   </div>
+    </div>
+
+
+    <section>
+			<nav class="menu">
+				<button class="accordion">Department</button>
+		 <div class="panel">
+					<button class="accordion-2">CSE</button>
+					<button class="accordion-2" >EEE</button>
+					<button class="accordion-2">ECE</button>
+			</div>
+
+		<button class="accordion">Year</button>
+		<div class="panel">
+		<button class="accordion">I Year</button>
+		<div class="panel">
+			<button class="accordion-2">I Sem</button>
+			<button class="accordion-2">II Sem</button>
+		</div>
+		<button class="accordion">II Year</button>
+		<div class="panel">
+			<button class="accordion-2">III Sem</button>
+			<button class="accordion-2">IV Sem</button>
+		</div>
+		<button class="accordion">III Year</button>
+		<div class="panel">
+			<button class="accordion-2">V Sem</button>
+			<button class="accordion-2">VI Sem</button>
+		</div>
+		<button class="accordion">IV Year</button>
+		<div class="panel">
+			<button class="accordion-2">VII Sem</button>
+			<button class="accordion-2">VIII Sem</button>
+		</div>
+		</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+  </nav>
+
+  <article>
+
+    <div class="wrap"><br/><br/>
+   <div class="search centralise">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div>
+    <br/><br/>
+		<div class="row ">
+      <h3 style='font-family: "Righteous", cursive;'>Recommended For you </h3><br/>
+    <div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.BJ6RvaBNy_NE-TYHt-PqygHaL2%26pid%3DApi&f=1">
+</div><div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.muJD87HGRM2Ttti-hhhqWQHaJS%26pid%3DApi&f=1">
+</div><div class="column">
+  <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ONCDYTwdGH6xH1Zb8DOAJQHaJL%26pid%3DApi&f=1">
+</div><div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.XCcoK1vPeCfeC83vHyJLQQAAAA%26pid%3DApi&f=1">
+</div><br/><br/> </div>
+
+    <div class="row ">
+    <div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-7bT-fnMJebTV11eU059QAAAAA%26pid%3DApi&f=1">
+</div><div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.NPkuX-o_U5svO9RJ3Ao34wHaJK%26pid%3DApi&f=1">
+</div><div class="column">
+  <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.tnpGfqo8gFnaOYhxI60zeQAAAA%26pid%3DApi&f=1">
+</div><div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.31TL6fBYnWwGN_WQ3JOZFwHaLK%26pid%3DApi&f=1">
+</div>  </div>
+    </div>
+<br/><br/>
+		<div class="row " id="CSE">
+      <h3 style='font-family: "Righteous", cursive;'>Computer Science & Engineering</h3><br/>
+    <div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.OHgfcqzTdXUwlFJDmd1r0QAAAA%26pid%3DApi&f=1">
+</div><div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.AJRIM0m_Rjt4GEEP0nvpKwHaJe%26pid%3DApi&f=1">
+</div><div class="column">
+  <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.otJjZdo5D7a5qQ0ZEpgLZgHaJ8%26pid%3DApi&f=1">
+</div><div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Wmv0S9g9fUDwkJXknkha6AAAAA%26pid%3DApi&f=1">
+</div><br/><br/> </div>
+
+    <div class="row ">
+    <div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.LXhMIN2qqTuskDaWU1NQGwHaKn%26pid%3DApi&f=1">
+</div><div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.CWHEVPqgbJSGTcI49uIy9AHaJy%26pid%3DApi&f=1">
+</div><div class="column">
+  <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.l7iD29tUr1QLwwJMf5ZqhwHaJh%26pid%3DApi&f=1">
+</div><div class="column">
+    <img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.nhimPHxLrq8puMVQSw_9UwHaKm%26pid%3DApi&f=1">
+</div>  </div>
+    </div>
+  </article>
+  <div class="right">
+<button class="logout"><a href="logout.php" style="text-decoration: none; color:#ffffff;font-weight:bolder;">Logout</a></button>
+  </div>
+</section>
+</body>
+</html>

@@ -7,24 +7,55 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<script src="app.js"></script>
 </head>
 <body>
   <div class="container">
 	   <h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Book Bank</h1>
   </div>
   <section>
+
 		<nav class="menu">
+			<button class="accordion">eBooks</button>
+	 		<div class="panel">
+				<button class="accordion-2" onclick="window.open('https://books.google.com/');">Google Books</button>
+				<button class="accordion-2" onclick="window.open('https://www.amazon.com/Kindle-eBooks');">Kindle</button>
+			</div>
+			<button class="accordion">Purchase</button>
+	 		<div class="panel">
+				<button class="accordion-2" onclick="window.open('https://www.amazon.com/books-used-books-textbooks')">Amazon</button>
+				<button class="accordion-2" onclick="window.open('https://www.walmart.com/cp/books/3920')">Walmart</button>
+				<button class="accordion-2" onclick="window.open('https://www.abebooks.com/')">AbeBooks</button>
+			</div>
+			<button class="accordion-2" onclick="window.open('https://www.rejinpaul.com/2013/06/ece-eee-cse-it-mech-civil-bme-mba-mca-me-notes-anna-university.html')">AU Notes</button>
+			<button class="accordion-2" onclick="window.location.href='../Module 5/contact.html'">Contact Us</button>
+			<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.maxHeight) {
+			      panel.style.maxHeight = null;
+			    } else {
+			      panel.style.maxHeight = panel.scrollHeight + "px";
+			    }
+			  });
+			}
+			</script>
 		</nav>
     <article>
-			<form>
+			<form method="post">
 				<div style="text-align:center">
 					<h3 style='font-family: "Righteous", cursive;	'>Select your Department and Year </h3><br/>
 					<br/><br/>
 					<select name="department" id="department" style="padding:8px;font-size:15px;border-radius: 0.2em;border: 0;outline:none">
 						<option value="def" selected disabled>Department</option>
         		<option value="cse" name="" >CSE</option>
-        		<option value="eee"name="" >EEE</option>
         		<option value="ece"name="">ECE</option>
+						<option value="eee"name="" >EEE</option>
       		</select>
       		<select name="year" id="year" style="margin-left:15px;padding:8px;font-size:15px;width:106px;border-radius: 0.2em;border: 0;outline:none;" >
 						<option value="def" selected disabled>Year</option>
@@ -36,8 +67,7 @@
       		<br/>
       	</div>
 				<br/>
-				<button class="logout" type="submit" value="Submit" style="margin-left: 402px;text-decoration: none;color:#ffffff;font-weight:bolder;" onclick="redirect()">Submit</button>
-				<script src="app.js"></script>
+				<button class="logout" type="submit" value="Submit" style="margin-left: 402px;text-decoration: none;color:#ffffff;font-weight:bolder;cursor:pointer" onclick="redirect()">Submit</button>
 			</form>
     </article>
     <div class="right">

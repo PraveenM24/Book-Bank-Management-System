@@ -16,6 +16,35 @@
   </div>
   <section>
 		<nav class="menu">
+			<button class="accordion">eBooks</button>
+	 		<div class="panel">
+				<button class="accordion-2" onclick="window.open('https://books.google.com/');">Google Books</button>
+				<button class="accordion-2" onclick="window.open('https://www.amazon.com/Kindle-eBooks');">Kindle</button>
+			</div>
+			<button class="accordion">Purchase</button>
+	 		<div class="panel">
+				<button class="accordion-2" onclick="window.open('https://www.amazon.com/books-used-books-textbooks')">Amazon</button>
+				<button class="accordion-2" onclick="window.open('https://www.walmart.com/cp/books/3920')">Walmart</button>
+				<button class="accordion-2" onclick="window.open('https://www.abebooks.com/')">AbeBooks</button>
+			</div>
+			<button class="accordion-2" onclick="window.open('https://www.rejinpaul.com/2013/06/ece-eee-cse-it-mech-civil-bme-mba-mca-me-notes-anna-university.html')">AU Notes</button>
+			<button class="accordion-2" onclick="window.location.href='../../Module 5/contact.html'">Contact Us</button>
+			<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.maxHeight) {
+			      panel.style.maxHeight = null;
+			    } else {
+			      panel.style.maxHeight = panel.scrollHeight + "px";
+			    }
+			  });
+			}
+			</script>
 		</nav>
 		<article>
       <h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-7 </h3><br/>

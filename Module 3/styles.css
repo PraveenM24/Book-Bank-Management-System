@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-footer{
-  height: 200px;
-}
+
 body{
   background: #f2f2f2;
   font-family: 'Open Sans', sans-serif;
@@ -149,6 +147,8 @@ img{
   padding-left: 20px;
   padding-right: 20px;
   text-decoration: none;
+  cursor:pointer;
+
 }
 .right {
   background-color:#e5e5e5;
@@ -192,7 +192,7 @@ img{
 
 
 }
-.accordion, .accordion-2 {
+.accordion, .accordion-2  {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -204,7 +204,10 @@ img{
   font-size: 15px;
   transition: 0.4s;
 }
+.accordion-2 a{
+  text-decoration: none;
 
+}
 .active, .accordion:hover, .accordion-2:hover {
   background-color: #ccc;
 }
