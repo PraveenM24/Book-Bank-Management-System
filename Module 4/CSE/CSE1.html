@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>CSE | I Year</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-</head>
+	<head>
+		<title>CSE | I Year</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	</head>
 <body>
 	<div class="container">
 		<h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Book Bank</h1>
 		<div class="row">
-	  </div>
-  </div>
-  <section>
+		</div>
+	</div>
+	<section>
+		<!--MENU-->
 		<nav class="menu">
 			<button class="accordion">eBooks</button>
-	 		<div class="panel">
+			<div class="panel">
 				<button class="accordion-2" onclick="window.open('https://books.google.com/');">Google Books</button>
 				<button class="accordion-2" onclick="window.open('https://www.amazon.com/Kindle-eBooks');">Kindle</button>
 			</div>
 			<button class="accordion">Purchase</button>
-	 		<div class="panel">
+			<div class="panel">
 				<button class="accordion-2" onclick="window.open('https://www.amazon.com/books-used-books-textbooks')">Amazon</button>
 				<button class="accordion-2" onclick="window.open('https://www.walmart.com/cp/books/3920')">Walmart</button>
 				<button class="accordion-2" onclick="window.open('https://www.abebooks.com/')">AbeBooks</button>
@@ -32,27 +33,68 @@
 			<script>
 			var acc = document.getElementsByClassName("accordion");
 			var i;
-
 			for (i = 0; i < acc.length; i++) {
-			  acc[i].addEventListener("click", function() {
-			    this.classList.toggle("active");
-			    var panel = this.nextElementSibling;
-			    if (panel.style.maxHeight) {
-			      panel.style.maxHeight = null;
-			    } else {
-			      panel.style.maxHeight = panel.scrollHeight + "px";
-			    }
-			  });
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.maxHeight) {
+						panel.style.maxHeight = null;
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + "px";
+					}
+				});
 			}
 			</script>
 		</nav>
-  	<article>
-      <h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-1 </h3><br/>
-      <h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-2</h3><br/>
-  	</article>
-  	<div class="right">
+		<!--MENU end-->
+		<!--MAIN-->
+		<article>
+			<h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-1 </h3><br/>
+			<div class="row ">
+				<div class="column">
+					<a href="https://drive.google.com/file/d/14CuKvZTOEL7eKXAnddEiVQFxCBCSP7K3/view?usp=sharing">
+					<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/51nJQu2ImwL._SX363_BO1,204,203,200_.jpg"></a>
+				</div>
+				<div class="column">
+					<a href="https://drive.google.com/file/d/1QwXjYsfcgde9VhV_a_SVoF86_shdLYO2/view?usp=sharing">
+					<img width="130px" height="190px" src="https://i.pinimg.com/originals/f9/18/99/f91899e31492c259b6cef3045201b824.png"></a>
+				</div>
+				<div class="column">
+					<a href="https://drive.google.com/file/d/1y9GoO3Hpj47rW_nJUs4AuWitITHK9jGo/view?usp=sharing">
+					<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/515uhrCgDqL._SX380_BO1,204,203,200_.jpg"></a>
+				</div>
+				<div class="column">
+					<a href="https://drive.google.com/file/d/1lKWItQeFSgBL7IYJx72mIyF6fKHwraMm/view?usp=sharing">
+					<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/71B-qt%2BGqeL._AC_UL600_SR489,600_.jpg"></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column-1">
+					<a href="https://drive.google.com/file/d/1_2fj08Iz_kglTt-aMcd7XUbeb6xuUdP8/view?usp=sharing"></a>
+					<img width="130px" height="190px" src="https://360techinfo.com/wp-content/uploads/2019/06/drawing-book.png">
+				</div>
+			</div>
+			<h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-2</h3><br/>
+			<div class="row ">
+				<div class="column">
+					<a href="https://drive.google.com/file/d/1htWzd1dQAsfnMgzd6-DddsYIiGm2GYuc/view?usp=sharing">
+					<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/51a9BpHbIvL._SX376_BO1,204,203,200_.jpg"></a>
+				</div>
+				<div class="column">
+					<a href="https://drive.google.com/file/d/1IxVIdUIzcHkch9lNUqphjr4law22tTtc/view?usp=sharing">
+					<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/51FhqOtSz1L._SX258_BO1,204,203,200_.jpg"></a>
+				</div>
+				<div class="column">
+					<a href="https://drive.google.com/file/d/1N7nnZytIP-w_nPB6nypymvHLvsY1yKEB/view?usp=sharing">
+					<img width="130px" height="190px" src="https://d1y8sb8igg2f8e.cloudfront.net/images/Screen_Shot_2016-05-11_at_11.33.43_PM.min-200x260.png"></a>
+				</div>
+			</div>
+		</article>
+		<!--MAIN end-->
+		<!--LOGOUT-->
+		<div class="right">
 			<button class="logout"><a href="logout.php" style="text-decoration: none; color:#ffffff;font-weight:bolder;">Logout</a></button>
-  	</div>
+		</div>
 	</section>
 </body>
 </html>

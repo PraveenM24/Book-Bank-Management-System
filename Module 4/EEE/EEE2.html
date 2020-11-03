@@ -1,58 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>EEE | II Year</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-</head>
-<body>
-	<div class="container">
-		<h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Book Bank</h1>
-		<div class="row">
-   	</div>
-	</div>
-  <section>
-		<nav class="menu">
-			<button class="accordion">eBooks</button>
-	 		<div class="panel">
-				<button class="accordion-2" onclick="window.open('https://books.google.com/');">Google Books</button>
-				<button class="accordion-2" onclick="window.open('https://www.amazon.com/Kindle-eBooks');">Kindle</button>
-			</div>
-			<button class="accordion">Purchase</button>
-	 		<div class="panel">
-				<button class="accordion-2" onclick="window.open('https://www.amazon.com/books-used-books-textbooks')">Amazon</button>
-				<button class="accordion-2" onclick="window.open('https://www.walmart.com/cp/books/3920')">Walmart</button>
-				<button class="accordion-2" onclick="window.open('https://www.abebooks.com/')">AbeBooks</button>
-			</div>
-			<button class="accordion-2" onclick="window.open('https://www.rejinpaul.com/2013/06/ece-eee-cse-it-mech-civil-bme-mba-mca-me-notes-anna-university.html')">AU Notes</button>
-			<button class="accordion-2" onclick="window.location.href='../../Module 5/contact.html'">Contact Us</button>
-			<script>
-			var acc = document.getElementsByClassName("accordion");
-			var i;
-
-			for (i = 0; i < acc.length; i++) {
-			  acc[i].addEventListener("click", function() {
-			    this.classList.toggle("active");
-			    var panel = this.nextElementSibling;
-			    if (panel.style.maxHeight) {
-			      panel.style.maxHeight = null;
-			    } else {
-			      panel.style.maxHeight = panel.scrollHeight + "px";
-			    }
-			  });
-			}
-			</script>
-		</nav>
-		<article>
-      <h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-3 </h3><br/>
-      <h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-4</h3><br/>
-  	</article>
-  	<div class="right">
-			<button class="logout"><a href="logout.php" style="text-decoration: none; color:#ffffff;font-weight:bolder;">Logout</a></button>
-  	</div>
-	</section>
-</body>
+	<head>
+		<title>EEE | II Year</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  	<link rel="stylesheet" type="text/css" href="styles.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Book Bank</h1>
+			<div class="row">
+   		</div>
+		</div>
+  	<section>
+			<!--MENU-->
+			<nav class="menu">
+				<button class="accordion">eBooks</button>
+	 			<div class="panel">
+					<button class="accordion-2" onclick="window.open('https://books.google.com/');">Google Books</button>
+					<button class="accordion-2" onclick="window.open('https://www.amazon.com/Kindle-eBooks');">Kindle</button>
+				</div>
+				<button class="accordion">Purchase</button>
+	 			<div class="panel">
+					<button class="accordion-2" onclick="window.open('https://www.amazon.com/books-used-books-textbooks')">Amazon</button>
+					<button class="accordion-2" onclick="window.open('https://www.walmart.com/cp/books/3920')">Walmart</button>
+					<button class="accordion-2" onclick="window.open('https://www.abebooks.com/')">AbeBooks</button>
+				</div>
+				<button class="accordion-2" onclick="window.open('https://www.rejinpaul.com/2013/06/ece-eee-cse-it-mech-civil-bme-mba-mca-me-notes-anna-university.html')">AU Notes</button>
+				<button class="accordion-2" onclick="window.location.href='../../Module 5/contact.html'">Contact Us</button>
+				<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+					for (i = 0; i < acc.length; i++) {
+			  		acc[i].addEventListener("click", function() {
+			    		this.classList.toggle("active");
+			    		var panel = this.nextElementSibling;
+			    		if (panel.style.maxHeight) {
+			      		panel.style.maxHeight = null;
+			    		} else {
+			      			panel.style.maxHeight = panel.scrollHeight + "px";
+			    		}
+			  		});
+					}
+				</script>
+			</nav>
+			<!--MENU end-->
+			<!--MAIN-->
+			<article>
+      	<h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-3 </h3><br/>
+      	<div class="row ">
+      		<div class="column">
+      			<a href="https://drive.google.com/file/d/1JzufpRg5x9wN8I3bvnV_2VQrLXZjCmGA/view?usp=sharing">
+							<img width="130px" height="190px" src="https://easyengineering.net/wp-content/uploads/2017/11/Transforms-and-Partial-Differential-Equations.jpg"></a>
+  				</div>
+					<div class="column">
+    				<a href="https://drive.google.com/file/d/1wBwdUV_-soonUxYORdfOFrMWT1Q5nGmf/view?usp=sharing">
+      			<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/511zz1A4stL.jpg"></a>
+  				</div>
+					<div class="column">
+    				<a href="https://drive.google.com/file/d/1GVvOCGkIgQRkFEFIvTUBAHogvQdrv9x5/view?usp=sharing">
+    				<img width="130px" height="190px" src="https://imgv2-2-f.scribdassets.com/img/document/241015186/original/b13d132b06/1601452726?v=1"></a>
+  				</div>
+					<div class="column">
+    				<a href="https://drive.google.com/file/d/1ZRkelQNDEoKpz10_tet6d-ItnCDUA6vZ/view?usp=sharing">
+      			<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/41Mvoc9S-dL._AC_UL600_SR399,600_.jpg"></a>
+  				</div>
+				</div>
+      	<h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-4</h3><br/>
+      	<div class="row ">
+	    		<div class="column">
+	    			<a href="https://drive.google.com/file/d/1p2VkCD8hSwnFEGFlTHTErfnrDF1AXlbE/view?usp=sharing">
+						<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/514FgRkn8rL.jpg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1iE4I56Ei7APxdJEHG_R2JQQ_77xRNO2j/view?usp=sharing">
+	    			<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/415jpJS0b8L.jpg"></a>
+					</div>
+				</div>
+  		</article>
+			<!--MAIN end-->
+			<!--LOGOUT-->
+  		<div class="right">
+				<button class="logout"><a href="logout.php" style="text-decoration: none; color:#ffffff;font-weight:bolder;">Logout</a></button>
+  		</div>
+		</section>
+	</body>
 </html>

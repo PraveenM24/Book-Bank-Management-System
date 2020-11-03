@@ -1,80 +1,104 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>CSE | III Year</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="container">
-		<h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Book Bank</h1>
-		<div class="row">
-   	</div>
-  </div>
-  <section>
-		<nav class="menu">
-			<button class="accordion">eBooks</button>
-	 		<div class="panel">
-				<button class="accordion-2" onclick="window.open('https://books.google.com/');">Google Books</button>
-				<button class="accordion-2" onclick="window.open('https://www.amazon.com/Kindle-eBooks');">Kindle</button>
+	<head>
+		<title>CSE | III Year</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Book Bank</h1>
+			<div class="row">
 			</div>
-			<button class="accordion">Purchase</button>
-	 		<div class="panel">
-				<button class="accordion-2" onclick="window.open('https://www.amazon.com/books-used-books-textbooks')">Amazon</button>
-				<button class="accordion-2" onclick="window.open('https://www.walmart.com/cp/books/3920')">Walmart</button>
-				<button class="accordion-2" onclick="window.open('https://www.abebooks.com/')">AbeBooks</button>
+		</div>
+		<section>
+			<!--MENU-->
+			<nav class="menu">
+				<button class="accordion">eBooks</button>
+				<div class="panel">
+					<button class="accordion-2" onclick="window.open('https://books.google.com/');">Google Books</button>
+					<button class="accordion-2" onclick="window.open('https://www.amazon.com/Kindle-eBooks');">Kindle</button>
+				</div>
+				<button class="accordion">Purchase</button>
+				<div class="panel">
+					<button class="accordion-2" onclick="window.open('https://www.amazon.com/books-used-books-textbooks')">Amazon</button>
+					<button class="accordion-2" onclick="window.open('https://www.walmart.com/cp/books/3920')">Walmart</button>
+					<button class="accordion-2" onclick="window.open('https://www.abebooks.com/')">AbeBooks</button>
+				</div>
+				<button class="accordion-2" onclick="window.open('https://www.rejinpaul.com/2013/06/ece-eee-cse-it-mech-civil-bme-mba-mca-me-notes-anna-university.html')">AU Notes</button>
+				<button class="accordion-2" onclick="window.location.href='../../Module 5/contact.html'">Contact Us</button>
+				<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+					for (i = 0; i < acc.length; i++) {
+						acc[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var panel = this.nextElementSibling;
+							if (panel.style.maxHeight) {
+								panel.style.maxHeight = null;
+							} else {
+								panel.style.maxHeight = panel.scrollHeight + "px";
+							}
+						});
+					}
+				</script>
+			</nav>
+			<!--MENU end-->
+			<!--MAIN-->
+			<article>
+				<h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-5 </h3><br/>
+				<div class="row ">
+					<div class="column">
+						<a href="https://drive.google.com/file/d/13gxp9qElOJbhzChsp-pus82OBLzDGs0v/view?usp=sharing">
+						<img width="130px" height="190px" src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0733/9780073376226.jpg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1K6t9lRNfDBVEQPu0qULOpbYVhk-4dRBD/view?usp=sharing">
+						<img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ebayimg.com%2Fimages%2Fg%2FIp4AAOSweZhfH8jI%2Fs-l640.jpg&f=1&nofb=1"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1I_Zm_b2qrpWfscn7CntRqhWuPCaX0uMm/view?usp=sharing">
+						<img width="130px" height="190px" src="https://www.edutechlearners.com/wp-content/uploads/2015/05/OOSE-edutechlearners.jpeg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1fAocMkJ5KpH8XZguLhXlxa5hshOfChYU/view?usp=sharing">
+						<img width="130px" height="190px" src="https://www.pearson.com/store/medias/-bigcovers-0321455363.jpg-size-W370?context=bWFzdGVyfGltYWdlc3w1ODY5MXxpbWFnZS9qcGVnfHN5cy1tYXN0ZXIvaW1hZ2VzL2g5YS9oMTEvODk3Mjk4MjcxNDM5OC9iaWdjb3ZlcnMvMDMyMTQ1NTM2My5qcGdfc2l6ZV9XMzcwfDdmMGRkYjRhZGIwZmRlY2JmMjc3N2FlMGRmMjQ0NDdmNWZlN2JmMDYzYTYyOTEwZmE0ZWRjNDA2N2Q3M2ExMTc"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column-full">
+						<a href="https://drive.google.com/file/d/14iGU8qxTKdNxMljnAB-ANR0RPt8J7qQb/view?usp=sharing">
+						<img width="130px" height="190px" src="https://images.springer.com/sgw/books/medium/9781588291615.jpg"></a>
+					</div>
+				</div>
+				<h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-6</h3><br/>
+				<div class="row ">
+					<div class="column">
+						<a href="https://drive.google.com/file/d/14iGU8qxTKdNxMljnAB-ANR0RPt8J7qQb/view?usp=sharing">
+						<img width="130px" height="190px" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1408313138l/8835305.jpg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/16Pgu9jHCP7cqJ29xmmIOnJQAULRDnOlb/view?usp=sharing">
+						<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/41yj7k3l45L._SX328_BO1,204,203,200_.jpg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1I7b854bSZx2G9mw77ZLwLqJ1KGNoq4yD/view?usp=sharing">
+						<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/61jDNUWbNmL._SX378_BO1,204,203,200_.jpg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1z_hpYswEOI2qpvg5h0bLyON2IwRrNFWG/view?usp=sharing">
+						<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/51Eo7W5htrL.jpg"></a>
+					</div>
+				</div>
+			</article>
+			<!--MAIN end-->
+			<!--LOGOUT-->
+			<div class="right">
+				<button class="logout"><a href="logout.php" style="text-decoration: none; color:#ffffff;font-weight:bolder;">Logout</a></button>
 			</div>
-			<button class="accordion-2" onclick="window.open('https://www.rejinpaul.com/2013/06/ece-eee-cse-it-mech-civil-bme-mba-mca-me-notes-anna-university.html')">AU Notes</button>
-			<button class="accordion-2" onclick="window.location.href='../../Module 5/contact.html'">Contact Us</button>
-			<script>
-			var acc = document.getElementsByClassName("accordion");
-			var i;
-
-			for (i = 0; i < acc.length; i++) {
-			  acc[i].addEventListener("click", function() {
-			    this.classList.toggle("active");
-			    var panel = this.nextElementSibling;
-			    if (panel.style.maxHeight) {
-			      panel.style.maxHeight = null;
-			    } else {
-			      panel.style.maxHeight = panel.scrollHeight + "px";
-			    }
-			  });
-			}
-			</script>
-		</nav>
-		<article>
-      <h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-5 </h3><br/>
-			<div class="row ">
-	    <div class="column">
-	    <a href="https://drive.google.com/file/d/13gxp9qElOJbhzChsp-pus82OBLzDGs0v/view?usp=sharing"><img width="130px" height="190px" src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0733/9780073376226.jpg"></a>
-	</div><div class="column">
-	    <a href="https://drive.google.com/file/d/1K6t9lRNfDBVEQPu0qULOpbYVhk-4dRBD/view?usp=sharing"><img width="130px" height="190px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ebayimg.com%2Fimages%2Fg%2FIp4AAOSweZhfH8jI%2Fs-l640.jpg&f=1&nofb=1"></a>
-	</div><div class="column">
-	  	<a href="https://drive.google.com/file/d/1I_Zm_b2qrpWfscn7CntRqhWuPCaX0uMm/view?usp=sharing"><img width="130px" height="190px" src="https://www.edutechlearners.com/wp-content/uploads/2015/05/OOSE-edutechlearners.jpeg"></a>
-	</div><div class="column">
-	    <a href="https://drive.google.com/file/d/1fAocMkJ5KpH8XZguLhXlxa5hshOfChYU/view?usp=sharing"><img width="130px" height="190px" src="https://www.pearson.com/store/medias/-bigcovers-0321455363.jpg-size-W370?context=bWFzdGVyfGltYWdlc3w1ODY5MXxpbWFnZS9qcGVnfHN5cy1tYXN0ZXIvaW1hZ2VzL2g5YS9oMTEvODk3Mjk4MjcxNDM5OC9iaWdjb3ZlcnMvMDMyMTQ1NTM2My5qcGdfc2l6ZV9XMzcwfDdmMGRkYjRhZGIwZmRlY2JmMjc3N2FlMGRmMjQ0NDdmNWZlN2JmMDYzYTYyOTEwZmE0ZWRjNDA2N2Q3M2ExMTc"></a>
-	</div><br/><br/> </div>
-
-	    <div class="row ">
-	    <div class="column">
-	    <a href="https://drive.google.com/file/d/14iGU8qxTKdNxMljnAB-ANR0RPt8J7qQb/view?usp=sharing"><img width="130px" height="190px" src="https://images.springer.com/sgw/books/medium/9781588291615.jpg"></a>
-	</div><div class="column">
-	    <img width="130px" height="190px" src="">
-	</div><div class="column">
-	  <img width="130px" height="190px" src="">
-	</div><div class="column">
-	    <img width="130px" height="190px" src="">
-	</div>  </div>
-	    </div>
-      <h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-6</h3><br/>
-  	</article>
-  	<div class="right">
-			<button class="logout"><a href="logout.php" style="text-decoration: none; color:#ffffff;font-weight:bolder;">Logout</a></button>
-  	</div>
-	</section>
-</body>
+		</section>
+	</body>
 </html>

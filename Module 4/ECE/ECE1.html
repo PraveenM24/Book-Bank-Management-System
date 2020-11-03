@@ -1,58 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>ECE | I Year</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="container">
-		<h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Book Bank</h1>
-		<div class="row">
-   	</div>
-  </div>
-  <section>
-		<nav class="menu">
-			<button class="accordion">eBooks</button>
-	 		<div class="panel">
-				<button class="accordion-2" onclick="window.open('https://books.google.com/');">Google Books</button>
-				<button class="accordion-2" onclick="window.open('https://www.amazon.com/Kindle-eBooks');">Kindle</button>
+	<head>
+		<title>ECE | I Year</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Book Bank</h1>
+			<div class="row">
 			</div>
-			<button class="accordion">Purchase</button>
-	 		<div class="panel">
-				<button class="accordion-2" onclick="window.open('https://www.amazon.com/books-used-books-textbooks')">Amazon</button>
-				<button class="accordion-2" onclick="window.open('https://www.walmart.com/cp/books/3920')">Walmart</button>
-				<button class="accordion-2" onclick="window.open('https://www.abebooks.com/')">AbeBooks</button>
+		</div>
+		<section>
+			<!--MENU-->
+			<nav class="menu">
+				<button class="accordion">eBooks</button>
+				<div class="panel">
+					<button class="accordion-2" onclick="window.open('https://books.google.com/');">Google Books</button>
+					<button class="accordion-2" onclick="window.open('https://www.amazon.com/Kindle-eBooks');">Kindle</button>
+				</div>
+				<button class="accordion">Purchase</button>
+				<div class="panel">
+					<button class="accordion-2" onclick="window.open('https://www.amazon.com/books-used-books-textbooks')">Amazon</button>
+					<button class="accordion-2" onclick="window.open('https://www.walmart.com/cp/books/3920')">Walmart</button>
+					<button class="accordion-2" onclick="window.open('https://www.abebooks.com/')">AbeBooks</button>
+				</div>
+				<button class="accordion-2" onclick="window.open('https://www.rejinpaul.com/2013/06/ece-eee-cse-it-mech-civil-bme-mba-mca-me-notes-anna-university.html')">AU Notes</button>
+				<button class="accordion-2" onclick="window.location.href='../../Module 5/contact.html'">Contact Us</button>
+				<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+					for (i = 0; i < acc.length; i++) {
+						acc[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var panel = this.nextElementSibling;
+							if (panel.style.maxHeight) {
+								panel.style.maxHeight = null;
+							} else {
+								panel.style.maxHeight = panel.scrollHeight + "px";
+							}
+						});
+					}
+				</script>
+			</nav>
+			<!--MENU end-->
+			<!--MAIN-->
+			<article>
+				<h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-1 </h3><br/>
+				<div class="row ">
+					<div class="column">
+						<a href="https://drive.google.com/file/d/14CuKvZTOEL7eKXAnddEiVQFxCBCSP7K3/view?usp=sharing">
+						<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/51nJQu2ImwL._SX363_BO1,204,203,200_.jpg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1QwXjYsfcgde9VhV_a_SVoF86_shdLYO2/view?usp=sharing">
+						<img width="130px" height="190px" src="https://i.pinimg.com/originals/f9/18/99/f91899e31492c259b6cef3045201b824.png"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1y9GoO3Hpj47rW_nJUs4AuWitITHK9jGo/view?usp=sharing">
+						<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/515uhrCgDqL._SX380_BO1,204,203,200_.jpg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1lKWItQeFSgBL7IYJx72mIyF6fKHwraMm/view?usp=sharing">
+						<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/71B-qt%2BGqeL._AC_UL600_SR489,600_.jpg"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column-1">
+						<a href="https://drive.google.com/file/d/1_2fj08Iz_kglTt-aMcd7XUbeb6xuUdP8/view?usp=sharing"></a>
+						<img width="130px" height="190px" src="https://360techinfo.com/wp-content/uploads/2019/06/drawing-book.png">
+					</div>
+				</div>
+				<h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-2</h3><br/>
+				<div class="row ">
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1BJd0GUsV_BofRrSL35ziLmf_73yrBfq_/view?usp=sharing">
+						<img width="130px" height="190px" src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0735/9780073529578.jpg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/10dryhjVGMcMw4wFqsoAX69ksotddFZzo/view?usp=sharing">
+						<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/513kDK1UX7L.jpg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1z9Vw1NBb_mkf8BtcFl_um4DtZ7tg6R0m/view?usp=sharing">
+						<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/81W+GA2FZ6L.jpg"></a>
+					</div>
+				</div>
+			</article>
+			<!--MAIN end-->
+			<!--LOGOUT-->
+			<div class="right">
+				<button class="logout"><a href="logout.php" style="text-decoration: none; color:#ffffff;font-weight:bolder;">Logout</a></button>
 			</div>
-			<button class="accordion-2" onclick="window.open('https://www.rejinpaul.com/2013/06/ece-eee-cse-it-mech-civil-bme-mba-mca-me-notes-anna-university.html')">AU Notes</button>
-			<button class="accordion-2" onclick="window.location.href='../../Module 5/contact.html'">Contact Us</button>
-			<script>
-			var acc = document.getElementsByClassName("accordion");
-			var i;
-
-			for (i = 0; i < acc.length; i++) {
-			  acc[i].addEventListener("click", function() {
-			    this.classList.toggle("active");
-			    var panel = this.nextElementSibling;
-			    if (panel.style.maxHeight) {
-			      panel.style.maxHeight = null;
-			    } else {
-			      panel.style.maxHeight = panel.scrollHeight + "px";
-			    }
-			  });
-			}
-			</script>
-		</nav>
-		<article>
-      <h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-1 </h3><br/>
-      <h3 style='font-family: "Righteous", cursive;text-align:center;'>Semester-2</h3><br/>
-  	</article>
-  	<div class="right">
-			<button class="logout"><a href="logout.php" style="text-decoration: none; color:#ffffff;font-weight:bolder;">Logout</a></button>
-  	</div>
-	</section>
-</body>
+		</section>
+	</body>
 </html>

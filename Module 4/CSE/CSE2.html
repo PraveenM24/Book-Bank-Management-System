@@ -1,58 +1,103 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>CSE | II Year</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="container">
-		<h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Book Bank</h1>
-		<div class="row">
-	  </div>
-  </div>
-  <section>
-		<nav class="menu">
-			<button class="accordion">eBooks</button>
-	 		<div class="panel">
-				<button class="accordion-2" onclick="window.open('https://books.google.com/');">Google Books</button>
-				<button class="accordion-2" onclick="window.open('https://www.amazon.com/Kindle-eBooks');">Kindle</button>
+	<head>
+		<title>CSE | II Year</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Book Bank</h1>
+			<div class="row">
 			</div>
-			<button class="accordion">Purchase</button>
-	 		<div class="panel">
-				<button class="accordion-2" onclick="window.open('https://www.amazon.com/books-used-books-textbooks')">Amazon</button>
-				<button class="accordion-2" onclick="window.open('https://www.walmart.com/cp/books/3920')">Walmart</button>
-				<button class="accordion-2" onclick="window.open('https://www.abebooks.com/')">AbeBooks</button>
+		</div>
+		<section>
+			<!--MENU-->
+			<nav class="menu">
+				<button class="accordion">eBooks</button>
+				<div class="panel">
+					<button class="accordion-2" onclick="window.open('https://books.google.com/');">Google Books</button>
+					<button class="accordion-2" onclick="window.open('https://www.amazon.com/Kindle-eBooks');">Kindle</button>
+				</div>
+				<button class="accordion">Purchase</button>
+				<div class="panel">
+					<button class="accordion-2" onclick="window.open('https://www.amazon.com/books-used-books-textbooks')">Amazon</button>
+					<button class="accordion-2" onclick="window.open('https://www.walmart.com/cp/books/3920')">Walmart</button>
+					<button class="accordion-2" onclick="window.open('https://www.abebooks.com/')">AbeBooks</button>
+				</div>
+				<button class="accordion-2" onclick="window.open('https://www.rejinpaul.com/2013/06/ece-eee-cse-it-mech-civil-bme-mba-mca-me-notes-anna-university.html')">AU Notes</button>
+				<button class="accordion-2" onclick="window.location.href='../../Module 5/contact.html'">Contact Us</button>
+				<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+					for (i = 0; i < acc.length; i++) {
+						acc[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var panel = this.nextElementSibling;
+							if (panel.style.maxHeight) {
+								panel.style.maxHeight = null;
+							} else {
+								panel.style.maxHeight = panel.scrollHeight + "px";
+							}
+						});
+					}
+				</script>
+			</nav>
+			<!--MENU end-->
+			<!--MAIN-->
+			<article>
+				<h3 style='font-family: "Righteous", cursive;text-align:center'>Semester-3 </h3><br/>
+				<div class="row ">
+					<div class="column">
+						<a href="https://drive.google.com/file/d/17Pfx6dJ6gXW5z-RS382sf6cSCcyCIhA1/view?usp=sharing"><img width="130px" height="190px" src="https://iasexamportal.com/sites/default/files/ISBN-0070648115.jpeg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1QCaf4WVBuOyS1eAhVQb4g2CQtSytCm_p/view?usp=sharing">
+						<img width="130px" height="190px" src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/1327/9780132774208.jpg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1K-QvX4OLqsecqINSiKtzFgnp-23hSb21/view?usp=sharing">
+						<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/51Wo9pTgBFL._SX402_BO1,204,203,200_.jpg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1XTO2SfI-OTcogLVpWKa3NHPR8-9KEF-s/view?usp=sharing">
+						<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/41blpdMf0uL._SX258_BO1,204,203,200_.jpg"></a>
+					</div>
+					<div class="column-full">
+						<a href="https://drive.google.com/file/d/1PDqwn5Tcvp8vwI4KR-sHOcfE0isjBExF/view?usp=sharing"></a>
+						<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/51mDmYHm31L.jpg">
+					</div>
+				</div>
+				<h3 style='font-family: "Righteous", cursive;text-align:center'>Semester-4</h3><br/>
+				<div class="row ">
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1WX_1YqTnhAi2o8PZlUD9Uofafb_MRtOf/view?usp=sharing"><img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/517DOVdwMjL.jpg"></a>
+					</div><div class="column">
+						<a href="https://drive.google.com/file/d/1q17uzE7vHvdg8rT6NpNiM0prFaYO9ltS/view?usp=sharing">
+						<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/51c-Cwiob8L._SX258_BO1,204,203,200_.jpg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1pMW_nOt303lyVS31HMU8k48vu8ENbWy9/view?usp=sharing">
+						<img width="130px" height="190px" src="https://www0.alibris-static.com/software-engineering-a-practitioners-approach/isbn/9780073655789_l.jpg"></a>
+					</div>
+					<div class="column">
+						<a href="https://drive.google.com/file/d/1drX_AR3QibH1hjPj-uV77UPIexEF-3ld/view?usp=sharing">
+						<img width="130px" height="190px" src="https://www.pearson.com/store/medias/-bigcovers-0132316811.jpg-size-W370?context=bWFzdGVyfGltYWdlc3w4NTYyM3xpbWFnZS9qcGVnfHN5cy1tYXN0ZXIvaW1hZ2VzL2gzNS9oZDkvODkwNjk2NTU0OTA4Ni9iaWdjb3ZlcnMvMDEzMjMxNjgxMS5qcGdfc2l6ZV9XMzcwfDY0NDBlNjJjNWZhYmM0MDQyMjExNWQwMjE5OGI5NTBmODNlYTZlNWM3M2RlOTcyMTBkNTU2ZTYzMzY1NmZjYmE"></a>
+					</div>
+					<div class="column-1">
+						<a href="https://drive.google.com/file/d/1zxRtir6f7dwRnbiB72pQ99L_qQSx5mFw/view?usp=sharing">
+						<img width="130px" height="190px" src="https://images-na.ssl-images-amazon.com/images/I/51vycCpQd+L._SX319_BO1,204,203,200_.jpg"></a>
+					</div>
+				</div>
+			</article>
+			<!--MAIN end-->
+			<!--LOGOUT-->
+			<div class="right">
+				<button class="logout"><a href="logout.php" style="text-decoration: none; color:#ffffff;font-weight:bolder;">Logout</a></button>
 			</div>
-			<button class="accordion-2" onclick="window.open('https://www.rejinpaul.com/2013/06/ece-eee-cse-it-mech-civil-bme-mba-mca-me-notes-anna-university.html')">AU Notes</button>
-			<button class="accordion-2" onclick="window.location.href='../../Module 5/contact.html'">Contact Us</button>
-			<script>
-			var acc = document.getElementsByClassName("accordion");
-			var i;
-
-			for (i = 0; i < acc.length; i++) {
-			  acc[i].addEventListener("click", function() {
-			    this.classList.toggle("active");
-			    var panel = this.nextElementSibling;
-			    if (panel.style.maxHeight) {
-			      panel.style.maxHeight = null;
-			    } else {
-			      panel.style.maxHeight = panel.scrollHeight + "px";
-			    }
-			  });
-			}
-			</script>
-		</nav>
-  	<article>
-      <h3 style='font-family: "Righteous", cursive;text-align:center'>Semester-3 </h3><br/>
-      <h3 style='font-family: "Righteous", cursive;text-align:center'>Semester-4</h3><br/>
-  	</article>
-  	<div class="right">
-			<button class="logout"><a href="logout.php" style="text-decoration: none; color:#ffffff;font-weight:bolder;">Logout</a></button>
-  	</div>
-	</section>
-</body>
+		</section>
+	</body>
 </html>
