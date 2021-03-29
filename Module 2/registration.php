@@ -36,8 +36,7 @@
         $cpassword = stripslashes($_REQUEST['CPassword']);
         $cpassword = mysqli_real_escape_string($con, $cpassword);
         //$create_datetime = date("Y-m-d H:i:s");
-        $query   = "INSERT into `test-values` (FirstName, LastName, Profession, Institution, Email, PhoneNo,UserName, Password, CPassword )
-                     VALUES ('$fname', '$lname','$profession', '$Institution','$email','$phone','$username','$password','$cpassword')";
+        $query   = "INSERT into `values` (FirstName, LastName, Profession, Institution, Email, PhoneNo,UserName, Password, CPassword ) VALUES ('$fname', '$lname','$profession', '$Institution','$email','$phone','$username','$password','$cpassword')";
         $result   = mysqli_query($con, $query);
         if ($result) {
           header('location:../Module 1/index.php');

@@ -19,7 +19,7 @@
           $password = stripslashes($_REQUEST['password']);
           $password = mysqli_real_escape_string($con, $password);
           // Check user is exist in the database
-          $query    = "SELECT * FROM `test-values` WHERE UserName='$username'
+          $query    = "SELECT * FROM `values` WHERE UserName='$username'
                        AND Password='$password'";
           $result = mysqli_query($con, $query) or die("Unable to connect");
           $rows = mysqli_num_rows($result);

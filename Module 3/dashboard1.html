@@ -11,21 +11,31 @@
 </head>
 <body>
   <div class="container">
-	   <h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Book Bank</h1>
+	   <h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Resource Bank</h1>
   </div>
   <section>
 
 		<nav class="menu">
-			<button class="accordion">eBooks</button>
+			<button class="accordion">Search eBooks</button>
 	 		<div class="panel">
 				<button class="accordion-2" onclick="window.open('https://books.google.com/');">Google Books</button>
 				<button class="accordion-2" onclick="window.open('https://www.amazon.com/Kindle-eBooks');">Kindle</button>
 			</div>
-			<button class="accordion">Purchase</button>
+			<button class="accordion">GATE Materials</button>
 	 		<div class="panel">
-				<button class="accordion-2" onclick="window.open('https://www.amazon.com/books-used-books-textbooks')">Amazon</button>
-				<button class="accordion-2" onclick="window.open('https://www.walmart.com/cp/books/3920')">Walmart</button>
-				<button class="accordion-2" onclick="window.open('https://www.abebooks.com/')">AbeBooks</button>
+				<button class="accordion-2" onclick="window.open('https://bit.ly/GATE-CSE')">GATE Civil</button>
+				<button class="accordion-2" onclick="window.open('https://bit.ly/GATE-CSE')">GATE CSE</button>
+				<button class="accordion-2" onclick="window.open('https://bit.ly/GATE-ECE')">GATE ECE</button>
+				<button class="accordion-2" onclick="window.open('https://bit.ly/GATE-ECE')">GATE EEE</button>
+				<button class="accordion-2" onclick="window.open('https://bit.ly/GATEMECH')">GATE Mech</button>
+			</div>
+			<button class="accordion">Lab Manuals</button>
+			<div class="panel">
+				<button class="accordion-2" onclick="window.open('https://')">Civil</button>
+				<button class="accordion-2" onclick="window.open('https://')">CSE</button>
+				<button class="accordion-2" onclick="window.open('https://')">ECE</button>
+				<button class="accordion-2" onclick="window.open('https://')">EEE</button>
+				<button class="accordion-2" onclick="window.open('https://')">Mech</button>
 			</div>
 			<button class="accordion-2" onclick="window.open('https://www.rejinpaul.com/2013/06/ece-eee-cse-it-mech-civil-bme-mba-mca-me-notes-anna-university.html')">AU Notes</button>
 			<button class="accordion-2" onclick="window.location.href='../Module 5/contact.html'">Contact Us</button>
@@ -53,9 +63,11 @@
 					<br/><br/>
 					<select name="department" id="department" style="padding:8px;font-size:15px;border-radius: 0.2em;border: 0;outline:none">
 						<option value="def" selected disabled>Department</option>
-        		<option value="cse" name="" >CSE</option>
+        		<option value="civil" name="" >Civil</option>
+						<option value="cse" name="" >CSE</option>
         		<option value="ece"name="">ECE</option>
 						<option value="eee"name="" >EEE</option>
+						<option value="mech" name="" >Mech</option>
       		</select>
       		<select name="year" id="year" style="margin-left:15px;padding:8px;font-size:15px;width:106px;border-radius: 0.2em;border: 0;outline:none;" >
 						<option value="def" selected disabled>Year</option>
